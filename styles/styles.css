@@ -1,62 +1,312 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-ol, ul {
-  list-style: none;
-}
+/* 
+===================== 
+ 版型 
+===================== 
+*/
 
-.site-main {
-    background-color: #607d8e;
-}
-
-.site-main-inner {
-    width: 1020px;
-    margin: 0 auto;
-    /* height: 1000px; */
-    background-color: #88a9b9;
-}
-
-.site-header {
-    background-color: #30a9de;
-}
-
-.site-header-inner {
-/*     width: 960px;
- */    margin: 0 auto;
-    height: 50px;
-    background-color: #4ab8e8;
-}
-
-.site-footer {
-    background-color: #00bcd4;
-}
-
-.site-footer-inner {
-    /* width: 960px; */
-    margin: 0 auto;
-    height: 50px;
-    background-color: #29cfe4;
+body {
+    background-color: #888;
 }
 
 .container {
-  /* width: 960%; */
-  height: 100%;
-  margin: 0 auto;
+    width: 1040px;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+    padding-bottom: 50px;
+}
+
+.wrap {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #fcfcfc;
+}
+
+.clearfix {
+    clear: both;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    overflow: hidden;
+}
+
+
+
+/* 
+===================== 
+ navbar
+===================== 
+*/
+
+.nav {
+    margin: 0 auto;
+    width: 1040px;
+    background-color: #f3f3f3;
+}
+
+
+.nav ul {
+    overflow: hidden;
+}
+
+.nav ul>li {
+    float: left;
+}
+
+.nav ul .right {
+    float: right;
+}
+
+.nav ul>li a {
+    display: block;
+    background-color: #f3f3f3;
+    text-decoration: none;
+    padding: 7px 14px;
+    color: #555;
+    text-align: center;
+    vertical-align: top;
+    line-height: 24px;
+    border-top: 2px solid #ddd;
+}
+
+.nav ul>li a:hover {
+    background-color: #cacaca;
+    color: #222;
+    border-top: 2px solid orange;
+}
+
+
+
+/* 
+===================== 
+ shop-title
+===================== 
+*/
+
+.shop-title {
+    text-align: center;
+    height: 200px;
+    /* background-color: #f3f3f3; */
+    line-height: 200px;
+    border-top: 2px solid #e8e8e8;
+    border-bottom: 2px solid #e8e8e8;
+}
+
+
+
+/* 
+===================== 
+ shop nav
+===================== 
+*/
+
+.shop-nav {
+    /* border-top: 2px solid #e8e8e8; */
+    border-bottom: 2px solid #e8e8e8;
+}
+
+.shop-nav ul {
+    width: 1020px;
+    /* background-color: #f3f3f3; */
+    overflow: hidden;
+}
+
+.shop-nav ul li {
+    float: left;
+}
+
+.shop-nav ul li.active {
+    background-color: #eaa;
+}
+
+.shop-nav ul .right {
+    float: right;
+}
+
+.shop-nav li a {
+    display: block;
+    /* background-color: #f3f3f3; */
+    text-decoration: none;
+    padding: 7px 14px;
+    color: #555;
+    text-align: center;
+    vertical-align: top;
+    line-height: 24px;
+}
+
+.shop-nav li a:hover {
+    background-color: #eaa;
+    color: #222;
+}
+
+.shop-nav .active {
+    background-color: #eaa;
+}
+
+
+
+/* 
+===================== 
+ hero
+===================== 
+*/
+
+.hero {
+    position: relative;
+}
+
+.hot {
+    width: 680px;
+    height: 420px;
+    margin: 20px 20px 20px 0;
+}
+
+.rightside {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.rightside li {
+    width: 320px;
+    height: 200px;
+}
+
+.rightside li+li {
+    padding-top: 20px;
+}
+
+
+
+/* 
+===================== 
+ advblocks
+===================== 
+*/
+
+.adv ul li {
+    width: 330px;
+    height: 85px;
+    margin: 0px;
+    float: left;
+}
+
+.adv ul li+li {
+    margin-left: 15px;
+}
+
+
+
+/* 
+===================== 
+ category list
+===================== 
+*/
+
+.category {
+    text-align: center;
+}
+
+.category ul {
+    display: inline-block;
+    line-height: 30px;
+    margin: 15px auto;
+}
+
+.category ul li {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 1.2em;
+    float: left;
+}
+
+.category ul li:hover {
+    background-color: #dfdfdf;
+}
+
+.category ul li a:hover {
+    color: red;
+}
+
+.category li+li {
+    border-left: 2px solid #ddd;
+}
+
+.category .active {
+    background-color: #dfdfdf;
+}
+
+.category .active a {
+    color: red;
+}
+
+
+
+/* 
+===================== 
+ product list
+===================== 
+*/
+
+.product-list ul li {
+    width: 200px;
+    height: 360px;
+    margin: 0px 5px 5px 0;
+    float: left;
+}
+
+.product-list ul li:nth-of-type(5n) {
+    margin-right: 0;
+}
+
+
+
+/* 
+===================== 
+ product card
+===================== 
+*/
+
+.card {
+    background-color: #dfdfdf;
+}
+
+.card img {
+    height: 235px;
+}
+
+
+
+
+/* 
+===================== 
+ footer
+===================== 
+*/
+
+.footer {
+    display: block;
+    width: 1040px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0px;
+    line-height: 100px;
+    font-size: 1.2em;
+    background-color: #f3f3f3;
+    border-top: 5px solid #dfdfdf;
+    border-bottom: 5px solid #666;
+}
+
+.footer p {
+    margin: 0 20px;
 }
